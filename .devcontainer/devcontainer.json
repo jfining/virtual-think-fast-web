@@ -1,0 +1,13 @@
+{
+    "name": "Think fast web development container",
+    "dockerFile": "Dockerfile",
+    "workspaceMount": "source=virtual-think-fast-web-workspace,target=/workspace,type=volume",
+    "workspaceFolder": "/workspace",
+    "appPort": "0.0.0.0:3000:3000",
+    "extensions": [
+	],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/zsh"
+    },
+    "postCreateCommand": "yarn"
+}
